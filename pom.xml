@@ -5,6 +5,7 @@
 	<groupId>Java-TestNG-Selenium</groupId>
 	<artifactId>Java-TestNG-Selenium</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+
 	<build>
 		<sourceDirectory>Java-TestNG-Selenium/src</sourceDirectory>
 		<resources>
@@ -35,9 +36,12 @@
 					</execution>
 				</executions>
 				<configuration>
+<!--					<suiteXmlFiles>-->
+<!--						&lt;!&ndash;suppress UnresolvedMavenProperty &ndash;&gt;-->
+<!--						<suiteXmlFile>${suite}</suiteXmlFile>-->
+<!--					</suiteXmlFiles>-->
 					<suiteXmlFiles>
-						<!--suppress UnresolvedMavenProperty -->
-						<suiteXmlFile>${suite}</suiteXmlFile>
+						<suiteXmlFile>single.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>
