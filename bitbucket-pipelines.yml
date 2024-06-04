@@ -1,0 +1,7 @@
+pipelines:
+  default:
+    - step:
+        caches:
+          - maven
+        script:
+          - mvn test -D suite=single.xml
